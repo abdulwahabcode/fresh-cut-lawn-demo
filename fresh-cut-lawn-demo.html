@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Cut Lawn Care &amp; Landscaping — Manistee, MI</title>
+<meta name="description" content="Fresh Cut Lawn Care & Landscaping — mowing, landscaping and seasonal cleanup across Mason, Lake & Manistee counties, MI. Call 231-613-8641.">
+<style>
+:root{
+  --morning:#F5F7EE;         /* crisp morning ivory (60%) */
+  --paper:#FFFFFF;
+  --leaf:#4F7D43;            /* fresh lawn green, muted (30%) */
+  --leaf-deep:#3A6132;
+  --pine:#1E3A24;            /* deep green ink */
+  --sky:#7FA8C4;             /* morning sky support */
+  --brass:#C2A46D;           /* 10% accent */
+  --body:#46543F;
+  --line:#DDE5D2;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--morning);color:var(--body);line-height:1.65;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* mowing-stripe motif */
+.stripes{height:12px;background:repeating-linear-gradient(90deg,var(--leaf) 0 46px,var(--leaf-deep) 46px 92px)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(245,247,238,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;min-height:66px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand .sun{width:38px;height:38px;flex:none;border-radius:50%;background:radial-gradient(circle at 35% 35%,#F2D98C,#E0B45C);display:grid;place-items:center;box-shadow:0 0 0 5px rgba(194,164,109,.18)}
+.brand b{font-size:17px;color:var(--pine);letter-spacing:.01em;display:block;line-height:1.25}
+.brand small{font-size:10px;letter-spacing:.26em;color:var(--leaf);font-weight:700}
+.nav-links{display:none;gap:26px;font-size:14px;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--body)}
+.nav-links a:hover{color:var(--leaf-deep)}
+.nav-call{display:inline-flex;align-items:center;min-height:44px;background:var(--leaf);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 20px;border-radius:999px}
+.nav-call:hover{background:var(--leaf-deep)}
+@media(min-width:780px){.nav-links{display:flex}}
+
+/* HERO — morning */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#EDF3E4 0%,var(--morning) 70%)}
+.hero-in{padding:84px 0 70px;text-align:center}
+.sunrise{width:120px;margin:0 auto 22px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.32em;color:var(--leaf);margin-bottom:16px}
+.hero h1{font-size:clamp(2.4rem,7.4vw,4.3rem);line-height:1.05;color:var(--pine);font-weight:800;letter-spacing:-.015em;max-width:720px;margin:0 auto}
+.hero h1 .fresh{color:var(--leaf)}
+.hero p.lead{max-width:600px;margin:20px auto 30px;font-size:clamp(1rem,2.4vw,1.14rem)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 30px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none}
+.btn-leaf{background:var(--leaf);color:#fff;box-shadow:0 12px 26px rgba(79,125,67,.3)}
+.btn-leaf:hover{background:var(--leaf-deep)}
+.btn-white{background:#fff;color:var(--pine);border:2px solid var(--line)}
+.btn-white:hover{border-color:var(--leaf)}
+.county-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:34px}
+.county-row span{font-size:13px;font-weight:600;color:var(--leaf-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 18px}
+
+/* SERVICES — checklist cards */
+#services{padding:76px 0;background:#fff}
+#services .eyebrow{text-align:center}
+#services h2{text-align:center;font-size:clamp(1.9rem,5vw,2.8rem);color:var(--pine);font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+#services .sub{text-align:center;max-width:600px;margin:0 auto 40px}
+.svc-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--morning);border:1px solid var(--line);border-radius:20px;padding:28px 26px;transition:transform .2s, box-shadow .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(79,125,67,.14)}
+.check{width:40px;height:40px;border-radius:50%;background:var(--leaf);display:grid;place-items:center;margin-bottom:16px;flex:none}
+.svc h3{font-size:18px;color:var(--pine);margin-bottom:8px}
+.svc p{font-size:14.5px}
+.svc .freq{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--leaf-deep);background:rgba(79,125,67,.12);border-radius:999px;padding:5px 14px}
+
+/* SEASON band */
+.season{background:linear-gradient(135deg,var(--pine),#2A4A2E);color:#EDF3E4;padding:64px 0}
+.season-in{display:grid;gap:28px;grid-template-columns:1fr;align-items:center}
+@media(min-width:820px){.season-in{grid-template-columns:1.2fr .8fr}}
+.season h2{font-size:clamp(1.7rem,4.6vw,2.5rem);font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.season p{color:#C9D6BE;max-width:520px}
+.season ul{list-style:none;display:grid;gap:12px;margin-top:4px}
+.season li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#EDF3E4}
+.season li svg{flex:none;margin-top:3px}
+
+/* WHY — sky tinted */
+#why{background:#EAF1F6;padding:76px 0}
+#why h2{text-align:center;font-size:clamp(1.9rem,5vw,2.8rem);color:var(--pine);font-weight:800;margin-bottom:36px}
+.why-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.wc{background:#fff;border-radius:20px;padding:32px 28px;text-align:center;box-shadow:0 10px 28px rgba(30,58,36,.07)}
+.wc .emoji{font-size:34px;display:block;margin-bottom:14px}
+.wc h3{font-size:18px;color:var(--pine);margin-bottom:8px}
+.wc p{font-size:14.5px}
+
+/* AREA */
+#area{padding:70px 0;text-align:center;background:var(--morning)}
+#area h2{font-size:clamp(1.8rem,4.6vw,2.5rem);color:var(--pine);font-weight:800;margin-bottom:10px}
+#area p{max-width:560px;margin:0 auto 26px}
+.towns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.towns span{background:#fff;border:1px solid var(--line);color:var(--leaf-deep);font-weight:600;border-radius:999px;padding:10px 20px;font-size:14px}
+.towns span.home{background:var(--leaf);border-color:var(--leaf);color:#fff}
+
+/* CONTACT */
+#contact{background:var(--pine);color:#EDF3E4;padding:76px 0}
+#contact h2{text-align:center;font-size:clamp(1.9rem,5vw,2.8rem);font-weight:800;margin-bottom:10px}
+#contact .sub{text-align:center;color:#C9D6BE;max-width:560px;margin:0 auto 36px}
+.contact-grid{display:grid;gap:14px;grid-template-columns:1fr;max-width:880px;margin:0 auto}
+@media(min-width:720px){.contact-grid{grid-template-columns:repeat(3,1fr)}}
+.c-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:30px 24px;text-align:center}
+.c-card h3{font-size:11px;letter-spacing:.3em;color:var(--brass);margin-bottom:10px;font-weight:800}
+.c-card a.big{font-size:19px;font-weight:700;color:#fff;text-decoration:none;word-break:break-all}
+.c-card a.big:hover{color:#F2D98C}
+.c-card p{font-size:13px;color:#B9C8AC;margin-top:8px}
+.big-cta{display:flex;justify-content:center;margin-top:34px}
+
+footer{background:#152A1A;color:#93A487;padding:28px 0 38px;font-size:13px}
+.foot-in{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
+.demo-credit{font-size:11.5px;letter-spacing:.1em}
+</style>
+</head>
+<body>
+
+<div class="stripes" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Fresh Cut Lawn Care home">
+      <span class="sun" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5B1E" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </span>
+      <span><b>Fresh Cut Lawn Care</b><small>&amp; LANDSCAPING</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a><a href="#season">Seasonal</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+    </div>
+    <a class="nav-call" href="tel:+12316138641">231-613-8641</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <svg class="sunrise" viewBox="0 0 120 70" aria-hidden="true">
+      <circle cx="60" cy="58" r="26" fill="#F2D98C"/>
+      <rect x="8" y="56" width="104" height="6" rx="3" fill="#4F7D43"/>
+      <rect x="18" y="46" width="84" height="5" rx="2.5" fill="#4F7D43" opacity=".55"/>
+      <rect x="30" y="37" width="60" height="4" rx="2" fill="#4F7D43" opacity=".3"/>
+    </svg>
+    <p class="eyebrow">LAWN CARE &amp; LANDSCAPING — MANISTEE, MI</p>
+    <h1>A <span class="fresh">fresh cut</span>, every single week.</h1>
+    <p class="lead"><strong style="color:var(--pine)">Fresh Cut Lawn Care &amp; Landscaping</strong> keeps Northern Michigan yards sharp — weekly mowing, crisp edges, clean beds, and seasonal cleanups across three counties.</p>
+    <div class="cta-row">
+      <a class="btn btn-leaf" href="tel:+12316138641">Call 231-613-8641</a>
+      <a class="btn btn-white" href="mailto:freshcutlawns2026@gmail.com">Get on the Schedule</a>
+    </div>
+    <div class="county-row">
+      <span>📍 Mason County</span><span>📍 Lake County</span><span>📍 Manistee County</span>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">SERVICES</p>
+    <h2>Everything your yard needs</h2>
+    <p class="sub">One crew for the whole property — lawn, beds, and everything in between.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Weekly Mowing</h3><p>Consistent cuts at the right height for the season, with clean striping that makes the whole street look twice.</p>
+        <span class="freq">WEEKLY / BIWEEKLY</span>
+      </div>
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Edging &amp; Trimming</h3><p>Crisp lines along driveways, walks, and beds — the detail work that separates a mow from a manicure.</p>
+        <span class="freq">WITH EVERY VISIT</span>
+      </div>
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Mulch &amp; Bed Care</h3><p>Fresh mulch, weeded beds, and tidy borders that make the house pop from the curb.</p>
+        <span class="freq">SPRING &amp; AS NEEDED</span>
+      </div>
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Spring Cleanup</h3><p>Winter debris, fallen branches, and matted leaves cleared out so the lawn wakes up right.</p>
+        <span class="freq">SPRING</span>
+      </div>
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Fall Leaf Cleanup</h3><p>Full leaf removal before the snow — your lawn breathes all winter and greens up faster in spring.</p>
+        <span class="freq">FALL</span>
+      </div>
+      <div class="svc">
+        <div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="m4 12.5 5 5L20 6.5"/></svg></div>
+        <h3>Hedge &amp; Shrub Trimming</h3><p>Shaped hedges and healthy shrubs, timed to the plant — not just hacked back.</p>
+        <span class="freq">SEASONAL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="season" id="season">
+  <div class="wrap season-in">
+    <div>
+      <h2>Michigan seasons are short.<br>Your yard shouldn't suffer for it.</h2>
+      <p>From first thaw to last leaf, we run a seasonal plan so your property is always one step ahead of the weather — not catching up to it.</p>
+    </div>
+    <ul>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2A46D" stroke-width="2.4"><path d="m4 12.5 5 5L20 6.5"/></svg>Spring wake-up: cleanup, first mow, bed refresh</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2A46D" stroke-width="2.4"><path d="m4 12.5 5 5L20 6.5"/></svg>Summer rhythm: weekly cuts, sharp edges</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2A46D" stroke-width="2.4"><path d="m4 12.5 5 5L20 6.5"/></svg>Fall finish: leaf removal, final cut, winter prep</li>
+    </ul>
+  </div>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center">WHY FRESH CUT</p>
+    <h2>The crew your neighbors already wave at</h2>
+    <div class="why-grid">
+      <div class="wc"><span class="emoji">🌅</span><h3>Show up on time</h3><p>Same day each week, gate closed behind us, stripes straight. Reliability is the whole business.</p></div>
+      <div class="wc"><span class="emoji">✂️</span><h3>Details, not just mowing</h3><p>Edging, blowing, and bed touch-ups come standard — not upsells.</p></div>
+      <div class="wc"><span class="emoji">🤝</span><h3>Local &amp; accountable</h3><p>We're your neighbors across three counties. If something's off, one call fixes it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <p class="eyebrow">SERVICE AREA</p>
+    <h2>Three counties, one standard</h2>
+    <p>Based in Manistee — routes running weekly across the region.</p>
+    <div class="towns">
+      <span class="home">Manistee County</span><span>Mason County</span><span>Lake County</span><span>Manistee</span><span>Ludington</span><span>Baldwin</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center;color:#C2A46D">GET ON THE SCHEDULE</p>
+    <h2>Message us today — get on the route</h2>
+    <p class="sub">Call or email with your address and what the yard needs. We'll get you a quote and a start date.</p>
+    <div class="contact-grid">
+      <div class="c-card"><h3>CALL</h3><a class="big" href="tel:+12316138641">231-613-8641</a><p>Fastest way on the schedule</p></div>
+      <div class="c-card"><h3>EMAIL</h3><a class="big" href="mailto:freshcutlawns2026@gmail.com">freshcutlawns2026@gmail.com</a><p>Send your address + photos</p></div>
+      <div class="c-card"><h3>FACEBOOK</h3><a class="big" href="https://www.facebook.com/61586400732354/" target="_blank" rel="noopener">Fresh Cut Lawn Care</a><p>Message us anytime</p></div>
+    </div>
+    <div class="big-cta"><a class="btn btn-leaf" href="tel:+12316138641">Call 231-613-8641</a></div>
+  </div>
+</section>
+
+<div class="stripes" aria-hidden="true"></div>
+<footer>
+  <div class="wrap foot-in">
+    <span>© 2026 Fresh Cut Lawn Care &amp; Landscaping · Manistee, MI</span>
+    <span class="demo-credit">DEMO WEBSITE BY WAHAB CODES</span>
+  </div>
+</footer>
+
+</body>
+</html>
